@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	{
 		line_number++;
 		instruction = parse_line(line);
-	
+
 		if (!(instruction->opcode) || instruction->opcode[0] == '#')
 		{
 			free(instruction);
